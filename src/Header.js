@@ -8,15 +8,19 @@ justify-content:space-between;
 align-items:center;
 padding-left:4px;
 padding-right:4px;
-margin-top:0;`
+margin-top:0;
+font-family:'Times New Roman', Times, serif;`
+
+
 
 export default class Header extends React.Component {
+
   render() {
     return (
       <ContainerHeader>
         <h1>LabeNinjas</h1>
         <div>
-          <button>Home</button>
+          <button onClick={this.props.goHome}>Home</button>
           <button>Carrinho</button>
         </div>
       </ContainerHeader>

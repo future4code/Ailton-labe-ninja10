@@ -19,8 +19,8 @@ export default class Home extends React.Component {
       <ContainerHome>
         <h1>LabeNinjas</h1>
         <p><b>O talento certo no momento certo!</b></p>
-        <button>Quero ser um Ninja</button>
-        <button>Contratar um Ninja</button>
+        <button onClick={this.props.goQueroSerUmNija}>Quero ser um Ninja</button>
+        <button onClick={this.props.goContratarServico}>Contratar um Ninja</button>
       </ContainerHome>
       </div> 
     )
